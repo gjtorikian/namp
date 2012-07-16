@@ -1,9 +1,9 @@
 all:
-	@cp lib/marked.js marked.js
-	@uglifyjs -o marked.min.js marked.js
+	@cp lib/namp.js namp.js
+	@uglifyjs -o namp.min.js namp.js
 
 clean:
-	@rm marked.js
-	@rm marked.min.js
+	@rm namp.js
+	@rm namp.min.js
 
 .PHONY: clean all

@@ -26,8 +26,8 @@
     "type" : "git",
     "url" : "git://github.com/gjtorikian/namp.git"
   },
-  "main": "./lib/marked.js",
-  "bin": "./bin/marked",
+  "main": "./lib/namp.js",
+  "bin": "./bin/namp",
   "man": "./man/marked.1",
   "dependencies": {
     "highlight.js": "~1.0.4"

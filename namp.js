@@ -849,6 +849,7 @@ marked.setOptions({
   namp: true,
   pedantic: false,
   sanitize: false,
+  preHighlight: true,
   highlight: null
 });
 
