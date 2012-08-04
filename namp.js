@@ -1,6 +1,6 @@
 /**
- * marked - A markdown parser (https://github.com/chjj/marked)
- * Copyright (c) 2011-2012, Christopher Jeffrey. (MIT Licensed)
+ * marked - Not another markdown parser (https://github.com/gjtorikian/namp)
+ * Copyright (c) 2011-2012, Garen Torikian. (MIT Licensed)
  */
 
 ;(function() {
