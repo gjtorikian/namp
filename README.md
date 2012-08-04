@@ -24,6 +24,8 @@ Maruku only allowed you to do inline IDs for stylized text, like `code`, **stron
 * Conversion of `Note: `, `Tip: `, and `Warning: ` blocks into [Twitter Bootstrap alert blocks](http://twitter.github.com/bootstrap/components.html#alerts). Awesome!
 * Build-time highlighting of `<pre>` code blocks. Enabled by default, see below for configuration instructions. (**NOT YET SUPPORTED**)
 
+* Markdown wrapped in `<div marked="1">` is processed.
+
 namp was forked from [marked](https://github.com/chjj/marked), which is a super-fast Markdown parser that handles all the standard GFM syntax.
 
 For a demonstration of all the additional add-ons, take a look at the _/doc_ folder.
@@ -189,6 +191,8 @@ $ cat hello.html
 
 ## License
 
-Copyright (c) 2011-2012, Christopher Jeffrey. (MIT License)
+Copyright (c) 2011-2012, Garen Torikian. (MIT License)
 
 See LICENSE for more info.
+
+Based mostly on Christopher Jeffrey (https://github.com/chjj/)
