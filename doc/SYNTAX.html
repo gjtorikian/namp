@@ -1,10 +1,219 @@
-<p>blahhhhh</p>
+<h1>Available Syntax</h1>
+<p>Here&#39;s a list of current syntax options. Notations are provided for PHP Extras syntax, Maruku syntax, GFM, and NAMP dialects. For most of these, you&#39;ll want to also check out the HTML source to see what&#39;s going on.</p>
+<hr>
+<h2>PHRASE EMPHASIS</h2>
+<hr>
+<p><em>italic</em>   <strong>bold</strong><br><em>italic</em>   <strong>bold</strong></p>
+<h2>LINKS</h2>
+<hr>
+<p>Inline:
+An <a href="http://url.com/" title="Title">example</a></p>
+<p>Reference-style labels (titles are optional):
+An <a href="http://example.com/" title="Title">example</a>. Then, anywhere<br>else in the doc, define the link:</p>
+<h2>IMAGES</h2>
+<hr>
+<p>Inline (titles are optional):
+<img src="http://gfhiryuu.tripod.com/random/green_dragon_sprite.gif" alt="alt text" title="Random image"></p>
+<p>Reference-style:
+<img src="http://upload.wikimedia.org/wikipedia/en/math/b/8/b/b8b4326ebb88870f8cc97ab3f59a0867.png" alt="alt text" title="Still, a random image"></p>
+<h2>HEADERS</h2>
+<hr>
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<p>atx-style (closing #&#39;s are optional):</p>
+<h1>Header 1</h1>
+<h2>Header 2</h2>
+<h6>Header 6</h6>
+<h2>LISTS</h2>
+<hr>
+<p>Ordered, without paragraphs:</p>
+<ol>
+<li>Eggs</li>
+<li>Milk</li>
+<li>Cheese</li>
+<li>Anything</li>
+</ol>
+<p>Ordered, with paragraphs:</p>
+<ol>
+<li><p>Eggs</p>
+<p>Preferrably brown</p>
+</li>
+<li><p>Milk</p>
+<p>Wait, I am lactose intolerant</p>
+</li>
+<li>Cheese</li>
+<li>Wait, Cheese?</li>
+</ol>
+<p>Unordered, with paragraphs:</p>
+<ul>
+<li><p>A list item.</p>
+<p>With multiple paragraphs.</p>
+</li>
+<li><p>Bar</p>
+</li>
+</ul>
+<p>You can nest them:</p>
+<ul>
+<li>Abacus<ul>
+<li>A tool</li>
+</ul>
+</li>
+<li>Banana<ol>
+<li>Fruit</li>
+<li>Gorilla snack<ul>
+<li>(or, for monkeys)</li>
+</ul>
+</li>
+<li>Yellow</li>
+</ol>
+</li>
+<li>Camel</li>
+</ul>
+<h2>BLOCKQUOTES</h2>
+<hr>
+<blockquote>
+<p>Email-style angle brackets
+are used for blockquotes.</p>
+<blockquote>
+<p>And, they can be nested. </p>
+</blockquote>
+<h4>Headers in blockquotes</h4>
+<ul>
+<li>You can quote a list.</li>
+<li>Like this.<ol>
+<li>And nest one.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<h2>CODE SPANS</h2>
+<hr>
+<p><code>&lt;code&gt;</code> spans are delimited
+by backticks.</p>
+<p>You can include literal backticks
+like <code> `this` </code>.</p>
+<h2>PREFORMATTED CODE BLOCKS</h2>
+<hr>
+<p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
+<p>This is a normal paragraph.</p>
+<pre><code>This <span class="keyword">is</span> a preformatted
+code <span class="keyword">block</span>.</code></pre>
+<p>Code blocks can also be &quot;fenced&quot; by <code> ``` </code> (GitHub-Flavored-Markdown)</p>
+<pre><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
+<p>For extra awesome, add the name of a programming language to the first fence, in order to syntax highlight it.</p>
+<pre><code class="language-perl">var <span class="keyword">x</span> = function () { 
+  console.<span class="keyword">log</span>(<span class="string">"This actually has 'perl' as a tag!"</span>)
+};</code></pre>
+<p>(Highlighting is enabled by default; you&#39;ll have to define your own CSS that matches the highlight-js notation, though, which this document does not do!)</p>
+<h2>STRIKETHROUGH</h2>
+<p>Hey, this is <del>terrible</del> great!</p>
+<h2>HORIZONTAL RULES</h2>
+<hr>
+<p>Three or more dashes or asterisks:</p>
+<hr>
+<hr>
+<hr>
+<h2>MANUAL LINE BREAKS</h2>
+<hr>
+<p>End a line with two or more spaces:</p>
+<p>Roses are red,<br>Violets are blue.</p>
+<hr>
+<h2>PUNCTUATION</h2>
+<p>&quot;check it out&quot;
+&quot;</p>
+<p>\&quot;</p>
+<p><code>&quot;should not curl&quot;</code></p>
+<p><em>&quot;Wow&quot;</em></p>
+<h2>TABLES (PHP Extras)</h2>
+<hr>
+<p>|a |b |c
+|:---|---|---
+|1 |2 |3</p>
+<p>|a |b |c
+|:--|:--:|:--
+|1 |2 (or <em>two</em>) |[3]{: .threeClass}
+|4 |5 | 6
+{: #demo test=&quot;true&quot;}</p>
+<p>x |y        |z
+--|--|--
+8 |9 |10
+{: .table .table-striped .table-bordered .table-condensed}</p>
+<p>Demonstrating alignment:</p>
+<h2>  right|left  | center</h2>
+<p>:|:-----|:------:
+ 0001 | 2 (or <em>two</em>)    | 003
+   4  | 0005 |  6</p>
+<h2>DEFINITION LISTS (PHP Extras)</h2>
+<h2>(sadly, broken)</h2>
+<p>Apple
+:   Pomaceous fruit of plants of the genus Malus in the family Rosaceae.</p>
+<ul>
+<li>List in dl</li>
+<li>Another <strong>item</strong><ul>
+<li>Wait, one more !<br>{: .listStyle}
+: Okay, back to another dd.</li>
+</ul>
+</li>
+</ul>
+<p>Orange
+:   The fruit of an evergreen tree of the genus Citrus.</p>
+<pre><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
+<pre><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
+<p>Pomegranate
+:   A deciduous shrub or small tree (Punica granatum), native to Asia and <em>widely cultivated</em> for its edible fruit. 
+Anyway, Blah blah blah.adsadsasd.</p>
+<p>Term 1
+:   This is a definition with two paragraphs. 
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+  Aliquam hendrerit mi posuere lectus.
+:   Second definition for term 1, also wrapped in a paragraph</p>
+<pre><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
+<p>{: #TestingIDHere}</p>
+<h2>ATTRIBUTES (Maruku)</h2>
+<p>{: #myid .myclass}</p>
+<hr>
+<p>Look <em>around</em>{: .class1} you! View [the source code!]{: .someclass .someclass2 vague=&quot;no&quot;}
+This whole area is covered in
+attributes!
+{: #bigBlock tutorial=yes}</p>
+<p>Spans should be covered in <code>[ ]</code>, with the attribute list defined afterwards.</p>
+<h2>AUTO-LINK</h2>
+<hr>
+<p><a href="http://foo.com/">http://foo.com/</a>  </p>
+<a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#102;&#111;&#x6f;&#x40;&#x62;&#97;&#x72;&#46;&#99;&#x6f;&#x6d;">&#102;&#111;&#x6f;&#x40;&#x62;&#97;&#x72;&#46;&#99;&#x6f;&#x6d;</a>
+
+<h2>ENCODING</h2>
+<hr>
+<p>&amp; &lt; &quot;aaa&quot; &amp;</p>
 <h2>Twitter Bootstrap tags</h2>
-<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>This should be wrapped in a div that looks like this: <code>&lt;div class=&#39;alert alert-success&#39;&gt;</code>. </div>
-<div class="alert alert-info"><h4 class="alert-heading">Tip: </h4>Tip: This should be wrapped in a div that looks like this: <code>&lt;div class=&#39;alert alert-info&#39;&gt;</code></div>
-<p>In theory I should be able to go on, right?</p>
-<div class="alert alert-block"><h4 class="alert-heading">Warning: </h4>And <em>this</em> should be wrapped in a div like this: <code>&lt;div class=&#39;alert alert-block&#39;&gt;</code>  </div>
-<p>Wrong, seems like GFM apply...</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4>This should be wrapped in a div that looks like this: <code>&lt;div class=&#39;alert alert-success&#39;&gt;</code>. 
+
+</div>
+<div class="alert alert-info"><h4 class="alert-heading">Tip: </h4>This should be wrapped in a div that looks like this: <code>&lt;div class=&#39;alert alert-info&#39;&gt;</code>
+
+</div>
+<p>Warning: And <em>this</em> should be wrapped in a div like this: <code>&lt;div class=&#39;alert alert-block&#39;&gt;</code></p>
 <p>These classes have to do with Twitter Bootstrap stylings for <code>Note: </code>, <code>Tip: </code>, and <code>Warning: </code>.</p>
-<p>test: blhhhahh</p>
-<h2>TA DA!</h2>
+<h2>INLINE HTML</h2>
+<hr>
+<p>
+HTML <em>should</em> be represented as is.<br>
+<del>The <strong>quick brown fox</strong> jumps over the lazy dog.</del>
+</p>
+
+<div>
+Regularly Markdown syntax ignored in HTML.<br><a href="http://www.google.co.jp/">Google</a>
+</div>
+
+
+<h2>Keybindings</h2>
+<hr>
+<p>To have fun, press: <abbr title="Ctrl-Option-Down">&#708;-&#x2325;-Down</abbr>. Or, you know, don&#39;t.</p>
+<div class="alert alert-success"><h4 class="alert-heading">Note: </h4><abbr title="Ctrl-K">&#708;-K</abbr>
+
+</div>
+<p><abbr title="Command-X">&#x2318;-X</abbr></p>
+<p><em>Your Name</em>, Setup, Develop, Stuff</p>
+<h2>Menus</h2>
+<hr>
+<p>Click <span class="menucascade"><span class="menuitem"><em><strong>Your Name</strong></em></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Setup</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Develop</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Stuff</strong></span>. For Visualforce components, click <span class="menucascade"><span class="menuitem"><strong>Blah</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Setup</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Develop</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Components</strong></span>.</p>

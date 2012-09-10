@@ -22,8 +22,9 @@ Maruku only allowed you to do inline IDs for stylized text, like `code`, **stron
 * Strikethroughs, using `~~`. For example, `This is a ~~strikethrough~~` turns into `This is a <del>strikethrough</del>`
 * Tables, with support for `left`,`right`, and `center` alignment (**NOT YET SUPPORTED**)
 * Conversion of `Note: `, `Tip: `, and `Warning: ` blocks into [Twitter Bootstrap alert blocks](http://twitter.github.com/bootstrap/components.html#alerts). Awesome!
-* Build-time highlighting of `<pre>` code blocks. Enabled by default, see below for configuration instructions. (**NOT YET SUPPORTED**)
-
+* Build-time highlighting of `<pre>` code blocks. Enabled by default, see below for configuration instructions.
+* `[[keys: ]]` converts keyboard characters into a pretty-printed format
+* `[[menu: ]]` converts a comma-seprated list into a pretty-printed menu
 * Markdown wrapped in `<div marked="1">` is processed.
 
 namp was forked from [marked](https://github.com/chjj/marked), which is a super-fast Markdown parser that handles all the standard GFM syntax.

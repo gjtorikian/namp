@@ -279,3 +279,20 @@ HTML _should_ be represented as is.<br>
 Regularly Markdown syntax ignored in HTML.  
 [Google](http://www.google.co.jp/)
 </div>
+
+
+## Keybindings
+-----------------
+
+
+To have fun, press: [[keys: ⌃-⌥-Down]]. Or, you know, don't.
+
+Note: [[keys: ⌃-K]]
+
+[[keys: ⌘-X]]
+
+_Your Name_, Setup, Develop, Stuff
+## Menus
+-----------------
+
+Click [[menu: _Your Name_, Setup, Develop, Stuff]]. For Visualforce components, click [[menu: Blah, Setup, Develop, Components]].
