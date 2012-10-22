@@ -1,6 +1,7 @@
 .*.swp
-/node_modules/
+node_modules/
 .DS_Store
 .c9revisions/
 .settings
 npm-debug.log
+out/
