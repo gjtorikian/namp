@@ -109,9 +109,9 @@ code <span class="keyword">block</span>.</code></pre>
   <span class="function"><span class="keyword">def</span> <span class="title">demo</span></span>
     puts <span class="string">"This is testing the demo construction"</span>
   <span class="keyword">end</span></code></pre>
-<pre class="demo" id="code-5"><code class="originalcontent hidden language-xml"><span class="tag">&lt;<span class="title">a:chart</span> <span class="attribute">width</span>=<span class="value">"500"</span> <span class="attribute">height</span>=<span class="value">"400"</span>></span>
-    <span class="tag">&lt;<span class="title">a:axis</span> <span class="attribute">mode</span>=<span class="value">"2D"</span> <span class="attribute">x1</span>=<span class="value">"-1"</span> <span class="attribute">y1</span>=<span class="value">"-0.2"</span> <span class="attribute">x2</span>=<span class="value">"15"</span> <span class="attribute">y2</span>=<span class="value">"1.1"</span>></span>
-        <span class="tag">&lt;<span class="title">a:style</span> <span class="attribute">type</span>=<span class="value">"text/chartcss"</span>></span>
+<pre class="demo" id="code-5"><code class="originalcontent hidden language-xml">&lt;a:chart width=&quot;500&quot; height=&quot;400&quot;&gt;
+    &lt;a:axis mode=&quot;2D&quot; x1=&quot;-1&quot; y1=&quot;-0.2&quot; x2=&quot;15&quot; y2=&quot;1.1&quot;&gt;
+        &lt;a:style type=&quot;text/chartcss&quot;&gt;
             plane{
                 fill   : white;
                 stroke : #ebebeb;
@@ -120,12 +120,13 @@ code <span class="keyword">block</span>.</code></pre>
                 fill   : white;
                 stroke : #ebebeb;
             };
-        <span class="tag">&lt;/<span class="title">a:style</span>></span>
-        <span class="tag">&lt;<span class="title">a:graph</span> 
-          <span class="attribute">mode</span>      = "<span class="attribute">bar</span>" 
-          <span class="attribute">dataslice</span> = "<span class="attribute">1X</span>"
-          <span class="attribute">series</span>    = "<span class="attribute">0.1</span>#<span class="attribute">a</span> <span class="attribute">0.4</span>#<span class="attribute">b</span> <span class="attribute">0.3</span>#<span class="attribute">c</span> <span class="attribute">0.7</span>#<span class="attribute">d</span> <span class="attribute">0.1</span>#<span class="attribute">a</span> <span class="attribute">0.6</span>#<span class="attribute">b</span> <span class="attribute">0.2</span>#<span class="attribute">c</span> <span class="attribute">0.6</span>#<span class="attribute">d</span> <span class="attribute">0.5</span>#<span class="attribute">a</span> <span class="attribute">0.9</span>#<span class="attribute">b</span> <span class="attribute">1</span>#<span class="attribute">c</span> <span class="attribute">0.9</span>#<span class="attribute">d</span>"></span>
-            <span class="tag">&lt;<span class="title">a:style</span> <span class="attribute">type</span>=<span class="value">"text/chartcss"</span>></span>
+        &lt;/a:style&gt;
+        &lt;!-- startcontent --&gt;
+        &lt;a:graph 
+          mode      = &quot;bar&quot; 
+          dataslice = &quot;1X&quot;
+          series    = &quot;0.1#a 0.4#b 0.3#c 0.7#d 0.1#a 0.6#b 0.2#c 0.6#d 0.5#a 0.9#b 1#c 0.9#d&quot;&gt;
+            &lt;a:style type=&quot;text/chartcss&quot;&gt;
                 graph.a{fill:#c4df9b}
                 graph.b{fill:#acd373}
                 graph.c{fill:#8dc63f}
@@ -135,10 +136,11 @@ code <span class="keyword">block</span>.</code></pre>
                     notransit : 0.5;
                     stroke    : #406618;
                 }
-            <span class="tag">&lt;/<span class="title">a:style</span>></span>
-        <span class="tag">&lt;/<span class="title">a:graph</span>></span>
-    <span class="tag">&lt;/<span class="title">a:axis</span>></span>
-<span class="tag">&lt;/<span class="title">a:chart</span>></span></code>
+            &lt;/a:style&gt;
+        &lt;/a:graph&gt;
+        &lt;!-- endcontent --&gt;
+    &lt;/a:axis&gt;
+&lt;/a:chart&gt;</code>
 <code class="snippetcontent language-xml">        <span class="tag">&lt;<span class="title">a:graph</span> 
           <span class="attribute">mode</span>      = "<span class="attribute">bar</span>" 
           <span class="attribute">dataslice</span> = "<span class="attribute">1X</span>"
@@ -155,26 +157,28 @@ code <span class="keyword">block</span>.</code></pre>
                 }
             <span class="tag">&lt;/<span class="title">a:style</span>></span>
         <span class="tag">&lt;/<span class="title">a:graph</span>></span></code></pre>
-<pre class="demo" id="code-6"><code class="originalcontent hidden language-javascript"><span class="keyword">new</span> apf.frame({
+<pre class="demo" id="code-6"><code class="originalcontent hidden language-javascript">new apf.frame({
   htmlNode   : document.body,
-  caption    : <span class="string">"Options"</span>,
-  width      : <span class="number">250</span>,
+  caption    : &quot;Options&quot;,
+  width      : 250,
   childNodes : [
-    <span class="keyword">new</span> apf.radiobutton({
-      value : <span class="number">1</span>,
-      data  : <span class="string">"Option 1"</span>
+    new apf.radiobutton({
+      value : 1,
+      data  : &quot;Option 1&quot;
     }),
-    <span class="keyword">new</span> apf.radiobutton({
-      value : <span class="number">2</span>,
-      data  : <span class="string">"Option 2"</span>
+    /* startcontent */
+    new apf.radiobutton({
+      value : 2,
+      data  : &quot;Option 2&quot;
     }),
-    <span class="keyword">new</span> apf.radiobutton({
-      value : <span class="number">3</span>,
-      data  : <span class="string">"Option 3"</span>
+    new apf.radiobutton({
+      value : 3,
+      data  : &quot;Option 3&quot;
     }),
-    <span class="keyword">new</span> apf.radiobutton({
-      value : <span class="number">4</span>,
-      data  : <span class="string">"Option 4"</span>
+    /* endcontent */
+    new apf.radiobutton({
+      value : 4,
+      data  : &quot;Option 4&quot;
     })
   ]
 });</code>
@@ -262,7 +266,7 @@ attributes!
 <h2>AUTO-LINK</h2>
 <hr>
 <p><a href="http://foo.com/">http://foo.com/</a>  </p>
-<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#102;&#x6f;&#x6f;&#64;&#98;&#97;&#x72;&#46;&#99;&#111;&#109;">&#102;&#x6f;&#x6f;&#64;&#98;&#97;&#x72;&#46;&#99;&#111;&#109;</a>
+<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x66;&#x6f;&#111;&#64;&#x62;&#97;&#x72;&#x2e;&#x63;&#x6f;&#x6d;">&#x66;&#x6f;&#111;&#64;&#x62;&#97;&#x72;&#x2e;&#x63;&#x6f;&#x6d;</a>
 
 <h2>ENCODING</h2>
 <hr>
