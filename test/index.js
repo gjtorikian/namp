@@ -2,7 +2,7 @@
 
 var fs = require('fs')
   , path = require('path')
-  , marked = require('marked')
+  , namp = require('namp')
   , dir = __dirname + '/tests';
 
 var BREAK_ON_ERROR = false;
@@ -56,7 +56,7 @@ main:
     file = files[filename];
 
     try {
-      text = marked(file.text).replace(/\s/g, '');
+      text = namp(file.text).replace(/\s/g, '');
       html = file.html.replace(/\s/g, '');
     } catch(e) {
       console.log('%s failed.', filename);
@@ -136,14 +136,14 @@ main.bench = function(name, func) {
 };
 
 var bench = function() {
-  marked.setOptions({ gfm: false });
-  main.bench('marked', marked);
+  namp.setOptions({ gfm: false });
+  main.bench('namp', namp);
 
-  marked.setOptions({ gfm: true });
-  main.bench('marked (gfm)', marked);
+  namp.setOptions({ gfm: true });
+  main.bench('namp (gfm)', namp);
 
-  marked.setOptions({ pedantic: true });
-  main.bench('marked (pedantic)', marked);
+  namp.setOptions({ pedantic: true });
+  main.bench('namp (pedantic)', namp);
 
   var discount = require('discount').parse;
   main.bench('discount', discount);
@@ -173,8 +173,8 @@ var bench = function() {
 };
 
 var time = function() {
-  var marked = require('../');
-  main.bench('marked', marked);
+  var namp = require('../');
+  main.bench('namp', namp);
 };
 
 if (!module.parent) {

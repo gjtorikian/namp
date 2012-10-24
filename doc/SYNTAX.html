@@ -96,14 +96,19 @@ like <code> `this` </code>.</p>
 <hr>
 <p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
 <p>This is a normal paragraph.</p>
-<pre><code>This <span class="keyword">is</span> a preformatted
+<pre id="code-1"><code>This <span class="keyword">is</span> a preformatted
 code <span class="keyword">block</span>.</code></pre>
 <p>Code blocks can also be &quot;fenced&quot; by <code> ``` </code> (GitHub-Flavored-Markdown)</p>
-<pre><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
+<pre id="code-2"><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
 <p>For extra awesome, add the name of a programming language to the first fence, in order to syntax highlight it.</p>
-<pre><code class="language-perl">var <span class="keyword">x</span> = function () { 
+<pre id="code-3"><code class="language-perl">var <span class="keyword">x</span> = function () { 
   console.<span class="keyword">log</span>(<span class="string">"This actually has 'perl' as a tag!"</span>)
 };</code></pre>
+<pre class="demo" id="code-4"><code class="language-ruby"><span class="class"><span class="keyword">module</span> <span class="title">Test</span></span>
+
+  <span class="function"><span class="keyword">def</span> <span class="title">demo</span></span>
+    puts <span class="string">"This is testing the demo construction"</span>
+  <span class="keyword">end</span></code></pre>
 <p>(Highlighting is enabled by default; you&#39;ll have to define your own CSS that matches the highlight-js notation, though, which this document does not do!)</p>
 <h2>STRIKETHROUGH</h2>
 <p>Hey, this is <del>terrible</del> great!</p>
@@ -157,8 +162,8 @@ code <span class="keyword">block</span>.</code></pre>
 </ul>
 <p>Orange
 :   The fruit of an evergreen tree of the genus Citrus.</p>
-<pre><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
-<pre><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
+<pre id="code-5"><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
+<pre id="code-6"><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
 <p>Pomegranate
 :   A deciduous shrub or small tree (Punica granatum), native to Asia and <em>widely cultivated</em> for its edible fruit. 
 Anyway, Blah blah blah.adsadsasd.</p>
@@ -167,7 +172,7 @@ Anyway, Blah blah blah.adsadsasd.</p>
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
   Aliquam hendrerit mi posuere lectus.
 :   Second definition for term 1, also wrapped in a paragraph</p>
-<pre><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
+<pre id="code-7"><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
 <p>{: #TestingIDHere}</p>
 <h2>ATTRIBUTES (Maruku)</h2>
 <p>{: #myid .myclass}</p>
@@ -180,7 +185,7 @@ attributes!
 <h2>AUTO-LINK</h2>
 <hr>
 <p><a href="http://foo.com/">http://foo.com/</a>  </p>
-<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x66;&#111;&#111;&#64;&#x62;&#97;&#114;&#x2e;&#99;&#111;&#109;">&#x66;&#111;&#111;&#64;&#x62;&#97;&#114;&#x2e;&#99;&#111;&#109;</a>
+<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#102;&#111;&#x6f;&#x40;&#98;&#x61;&#x72;&#x2e;&#x63;&#x6f;&#x6d;">&#102;&#111;&#x6f;&#x40;&#98;&#x61;&#x72;&#x2e;&#x63;&#x6f;&#x6d;</a>
 
 <h2>ENCODING</h2>
 <hr>
@@ -192,7 +197,9 @@ attributes!
 <div class="alert alert-info"><h4 class="alert-heading">Tip: </h4>This should be wrapped in a div that looks like this: <code>&lt;div class=&#39;alert alert-info&#39;&gt;</code>
 
 </div>
-<p>Warning: And <em>this</em> should be wrapped in a div like this: <code>&lt;div class=&#39;alert alert-block&#39;&gt;</code></p>
+<div class="alert alert-block"><h4 class="alert-heading">Warning: </h4>And <em>this</em> should be wrapped in a div like this: <code>&lt;div class=&#39;alert alert-block&#39;&gt;</code>
+
+</div>
 <p>These classes have to do with Twitter Bootstrap stylings for <code>Note: </code>, <code>Tip: </code>, and <code>Warning: </code>.</p>
 <h2>INLINE HTML</h2>
 <hr>
@@ -216,4 +223,4 @@ Regularly Markdown syntax ignored in HTML.<br><a href="http://www.google.co.jp/"
 <p><em>Your Name</em>, Setup, Develop, Stuff</p>
 <h2>Menus</h2>
 <hr>
-<p>Click <span class="menucascade"><span class="menuitem"><em><strong>Your Name</strong></em></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Setup</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Develop</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Stuff</strong></span>. For Visualforce components, click <span class="menucascade"><span class="menuitem"><strong>Blah</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Setup</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Develop</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Components</strong></span>.</p>
+<p>Click <span class="menucascade"><span class="menuitem"><em><strong>Your Name</strong></em></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Setup</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Develop</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Stuff</strong></span></span>. For Visualforce components, click <span class="menucascade"><span class="menuitem"><strong>Blah</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Setup</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Develop</strong></span><span class='menudivider'> <strong>&gt;</strong> </span><span class='menuitem'><strong>Components</strong></span></span>.</p>

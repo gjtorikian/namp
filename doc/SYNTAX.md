@@ -137,6 +137,14 @@ var x = function () {
 };
 ```
 
+```ruby, demo
+module Test
+
+  def demo
+    puts "This is testing the demo construction"
+  end
+```
+
 (Highlighting is enabled by default; you'll have to define your own CSS that matches the highlight-js notation, though, which this document does not do!)
 
 ## STRIKETHROUGH
