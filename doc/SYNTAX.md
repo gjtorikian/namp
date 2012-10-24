@@ -145,6 +145,69 @@ module Test
   end
 ```
 
+```xml, demo
+<a:chart width="500" height="400">
+    <a:axis mode="2D" x1="-1" y1="-0.2" x2="15" y2="1.1">
+        <a:style type="text/chartcss">
+            plane{
+                fill   : white;
+                stroke : #ebebeb;
+            };
+            tiles{
+                fill   : white;
+                stroke : #ebebeb;
+            };
+        </a:style>
+        <!-- startcontent -->
+        <a:graph 
+          mode      = "bar" 
+          dataslice = "1X"
+          series    = "0.1#a 0.4#b 0.3#c 0.7#d 0.1#a 0.6#b 0.2#c 0.6#d 0.5#a 0.9#b 1#c 0.9#d">
+            <a:style type="text/chartcss">
+                graph.a{fill:#c4df9b}
+                graph.b{fill:#acd373}
+                graph.c{fill:#8dc63f}
+                graph.d{fill:#598527}
+                graph{
+                    fill      : #fff200;
+                    notransit : 0.5;
+                    stroke    : #406618;
+                }
+            </a:style>
+        </a:graph>
+        <!-- endcontent -->
+    </a:axis>
+</a:chart>
+```
+
+```javascript, demo
+new apf.frame({
+  htmlNode   : document.body,
+  caption    : "Options",
+  width      : 250,
+  childNodes : [
+    new apf.radiobutton({
+      value : 1,
+      data  : "Option 1"
+    }),
+    /* startcontent */
+    new apf.radiobutton({
+      value : 2,
+      data  : "Option 2"
+    }),
+    new apf.radiobutton({
+      value : 3,
+      data  : "Option 3"
+    }),
+    /* endcontent */
+    new apf.radiobutton({
+      value : 4,
+      data  : "Option 4"
+    })
+  ]
+});
+
+```
 (Highlighting is enabled by default; you'll have to define your own CSS that matches the highlight-js notation, though, which this document does not do!)
 
 ## STRIKETHROUGH
