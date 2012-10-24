@@ -96,20 +96,20 @@ like <code> `this` </code>.</p>
 <hr>
 <p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
 <p>This is a normal paragraph.</p>
-<pre id="code-1"><code>This <span class="keyword">is</span> a preformatted
+<pre id="snippetcontent-1"><code>This <span class="keyword">is</span> a preformatted
 code <span class="keyword">block</span>.</code></pre>
 <p>Code blocks can also be &quot;fenced&quot; by <code> ``` </code> (GitHub-Flavored-Markdown)</p>
-<pre id="code-2"><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
+<pre id="snippetcontent-2"><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
 <p>For extra awesome, add the name of a programming language to the first fence, in order to syntax highlight it.</p>
-<pre id="code-3"><code class="language-perl">var <span class="keyword">x</span> = function () { 
+<pre id="snippetcontent-3"><code class="language-perl">var <span class="keyword">x</span> = function () { 
   console.<span class="keyword">log</span>(<span class="string">"This actually has 'perl' as a tag!"</span>)
 };</code></pre>
-<pre class="demo" id="code-4"><code class="language-ruby"><span class="class"><span class="keyword">module</span> <span class="title">Test</span></span>
+<pre class="demo" id="snippetcontent-4"><code class="language-ruby"><span class="class"><span class="keyword">module</span> <span class="title">Test</span></span>
 
   <span class="function"><span class="keyword">def</span> <span class="title">demo</span></span>
     puts <span class="string">"This is testing the demo construction"</span>
   <span class="keyword">end</span></code></pre>
-<pre class="demo" id="code-5"><code class="originalcontent hidden language-xml">&lt;a:chart width=&quot;500&quot; height=&quot;400&quot;&gt;
+<div class="demo" id="originalcontent-5">&lt;a:chart width=&quot;500&quot; height=&quot;400&quot;&gt;
     &lt;a:axis mode=&quot;2D&quot; x1=&quot;-1&quot; y1=&quot;-0.2&quot; x2=&quot;15&quot; y2=&quot;1.1&quot;&gt;
         &lt;a:style type=&quot;text/chartcss&quot;&gt;
             plane{
@@ -140,8 +140,7 @@ code <span class="keyword">block</span>.</code></pre>
         &lt;/a:graph&gt;
         &lt;!-- endcontent --&gt;
     &lt;/a:axis&gt;
-&lt;/a:chart&gt;</code>
-<code class="snippetcontent language-xml">        <span class="tag">&lt;<span class="title">a:graph</span> 
+&lt;/a:chart&gt;</div><pre class="demo" id="snippetcontent-5"><code class="snippetcontent language-xml">        <span class="tag">&lt;<span class="title">a:graph</span> 
           <span class="attribute">mode</span>      = "<span class="attribute">bar</span>" 
           <span class="attribute">dataslice</span> = "<span class="attribute">1X</span>"
           <span class="attribute">series</span>    = "<span class="attribute">0.1</span>#<span class="attribute">a</span> <span class="attribute">0.4</span>#<span class="attribute">b</span> <span class="attribute">0.3</span>#<span class="attribute">c</span> <span class="attribute">0.7</span>#<span class="attribute">d</span> <span class="attribute">0.1</span>#<span class="attribute">a</span> <span class="attribute">0.6</span>#<span class="attribute">b</span> <span class="attribute">0.2</span>#<span class="attribute">c</span> <span class="attribute">0.6</span>#<span class="attribute">d</span> <span class="attribute">0.5</span>#<span class="attribute">a</span> <span class="attribute">0.9</span>#<span class="attribute">b</span> <span class="attribute">1</span>#<span class="attribute">c</span> <span class="attribute">0.9</span>#<span class="attribute">d</span>"></span>
@@ -157,7 +156,7 @@ code <span class="keyword">block</span>.</code></pre>
                 }
             <span class="tag">&lt;/<span class="title">a:style</span>></span>
         <span class="tag">&lt;/<span class="title">a:graph</span>></span></code></pre>
-<pre class="demo" id="code-6"><code class="originalcontent hidden language-javascript">new apf.frame({
+<div class="demo" id="originalcontent-6">new apf.frame({
   htmlNode   : document.body,
   caption    : &quot;Options&quot;,
   width      : 250,
@@ -181,8 +180,7 @@ code <span class="keyword">block</span>.</code></pre>
       data  : &quot;Option 4&quot;
     })
   ]
-});</code>
-<code class="snippetcontent language-javascript">    <span class="keyword">new</span> apf.radiobutton({
+});</div><pre class="demo" id="snippetcontent-6"><code class="snippetcontent language-javascript">    <span class="keyword">new</span> apf.radiobutton({
       value : <span class="number">2</span>,
       data  : <span class="string">"Option 2"</span>
     }),
@@ -243,8 +241,8 @@ code <span class="keyword">block</span>.</code></pre>
 </ul>
 <p>Orange
 :   The fruit of an evergreen tree of the genus Citrus.</p>
-<pre id="code-7"><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
-<pre id="code-8"><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
+<pre id="snippetcontent-7"><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
+<pre id="snippetcontent-8"><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
 <p>Pomegranate
 :   A deciduous shrub or small tree (Punica granatum), native to Asia and <em>widely cultivated</em> for its edible fruit. 
 Anyway, Blah blah blah.adsadsasd.</p>
@@ -253,7 +251,7 @@ Anyway, Blah blah blah.adsadsasd.</p>
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
   Aliquam hendrerit mi posuere lectus.
 :   Second definition for term 1, also wrapped in a paragraph</p>
-<pre id="code-9"><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
+<pre id="snippetcontent-9"><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
 <p>{: #TestingIDHere}</p>
 <h2>ATTRIBUTES (Maruku)</h2>
 <p>{: #myid .myclass}</p>
@@ -266,7 +264,7 @@ attributes!
 <h2>AUTO-LINK</h2>
 <hr>
 <p><a href="http://foo.com/">http://foo.com/</a>  </p>
-<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x66;&#x6f;&#111;&#64;&#x62;&#97;&#x72;&#x2e;&#x63;&#x6f;&#x6d;">&#x66;&#x6f;&#111;&#64;&#x62;&#97;&#x72;&#x2e;&#x63;&#x6f;&#x6d;</a>
+<a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#102;&#111;&#x6f;&#64;&#98;&#97;&#114;&#46;&#x63;&#111;&#109;">&#102;&#111;&#x6f;&#64;&#98;&#97;&#114;&#46;&#x63;&#111;&#109;</a>
 
 <h2>ENCODING</h2>
 <hr>
