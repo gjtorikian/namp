@@ -96,22 +96,21 @@ like <code> `this` </code>.</p>
 <hr>
 <p>Indent every line of a code block by at least 4 spaces or 1 tab.</p>
 <p>This is a normal paragraph.</p>
-<pre id="snippetcontent-1"><code>This <span class="keyword">is</span> a preformatted
+<pre id="codecontent-1"><code>This <span class="keyword">is</span> a preformatted
 code <span class="keyword">block</span>.</code></pre>
 <p>Code blocks can also be &quot;fenced&quot; by <code> ``` </code> (GitHub-Flavored-Markdown)</p>
-<pre id="snippetcontent-2"><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
+<pre id="codecontent-2"><code>console<span class="preprocessor">.log</span>(<span class="string">"flock yeah!"</span>)<span class="comment">;</span></code></pre>
 <p>For extra awesome, add the name of a programming language to the first fence, in order to syntax highlight it.</p>
-<pre id="snippetcontent-3"><code class="language-perl">var <span class="keyword">x</span> = function () { 
+<pre id="codecontent-3"><code class="language-perl">var <span class="keyword">x</span> = function () { 
   console.<span class="keyword">log</span>(<span class="string">"This actually has 'perl' as a tag!"</span>)
 };</code></pre>
-<pre class="demo" id="snippetcontent-4"><code class="language-ruby"><span class="class"><span class="keyword">module</span> <span class="title">Test</span></span>
+<textarea id=codecontent-"4" class=demo language-ruby">module Test
 
-  <span class="function"><span class="keyword">def</span> <span class="title">demo</span></span>
-    puts <span class="string">"This is testing the demo construction"</span>
-  <span class="keyword">end</span></code></pre>
-<div class="demo" id="originalcontent-5">&lt;a:chart width=&quot;500&quot; height=&quot;400&quot;&gt;
-    &lt;a:axis mode=&quot;2D&quot; x1=&quot;-1&quot; y1=&quot;-0.2&quot; x2=&quot;15&quot; y2=&quot;1.1&quot;&gt;
-        &lt;a:style type=&quot;text/chartcss&quot;&gt;
+  def demo
+    puts "This is testing the demo construction"
+  end</textarea><textarea id=codecontent-"5" class=demo language-xml"><a:chart width="500" height="400">
+    <a:axis mode="2D" x1="-1" y1="-0.2" x2="15" y2="1.1">
+        <a:style type="text/chartcss">
             plane{
                 fill   : white;
                 stroke : #ebebeb;
@@ -120,13 +119,13 @@ code <span class="keyword">block</span>.</code></pre>
                 fill   : white;
                 stroke : #ebebeb;
             };
-        &lt;/a:style&gt;
-        &lt;!-- startcontent --&gt;
-        &lt;a:graph 
-          mode      = &quot;bar&quot; 
-          dataslice = &quot;1X&quot;
-          series    = &quot;0.1#a 0.4#b 0.3#c 0.7#d 0.1#a 0.6#b 0.2#c 0.6#d 0.5#a 0.9#b 1#c 0.9#d&quot;&gt;
-            &lt;a:style type=&quot;text/chartcss&quot;&gt;
+        </a:style>
+        <!-- startcontent -->
+        <a:graph 
+          mode      = "bar" 
+          dataslice = "1X"
+          series    = "0.1#a 0.4#b 0.3#c 0.7#d 0.1#a 0.6#b 0.2#c 0.6#d 0.5#a 0.9#b 1#c 0.9#d">
+            <a:style type="text/chartcss">
                 graph.a{fill:#c4df9b}
                 graph.b{fill:#acd373}
                 graph.c{fill:#8dc63f}
@@ -136,59 +135,35 @@ code <span class="keyword">block</span>.</code></pre>
                     notransit : 0.5;
                     stroke    : #406618;
                 }
-            &lt;/a:style&gt;
-        &lt;/a:graph&gt;
-        &lt;!-- endcontent --&gt;
-    &lt;/a:axis&gt;
-&lt;/a:chart&gt;</div><pre class="demo" id="snippetcontent-5"><code class="snippetcontent language-xml">        <span class="tag">&lt;<span class="title">a:graph</span> 
-          <span class="attribute">mode</span>      = "<span class="attribute">bar</span>" 
-          <span class="attribute">dataslice</span> = "<span class="attribute">1X</span>"
-          <span class="attribute">series</span>    = "<span class="attribute">0.1</span>#<span class="attribute">a</span> <span class="attribute">0.4</span>#<span class="attribute">b</span> <span class="attribute">0.3</span>#<span class="attribute">c</span> <span class="attribute">0.7</span>#<span class="attribute">d</span> <span class="attribute">0.1</span>#<span class="attribute">a</span> <span class="attribute">0.6</span>#<span class="attribute">b</span> <span class="attribute">0.2</span>#<span class="attribute">c</span> <span class="attribute">0.6</span>#<span class="attribute">d</span> <span class="attribute">0.5</span>#<span class="attribute">a</span> <span class="attribute">0.9</span>#<span class="attribute">b</span> <span class="attribute">1</span>#<span class="attribute">c</span> <span class="attribute">0.9</span>#<span class="attribute">d</span>"></span>
-            <span class="tag">&lt;<span class="title">a:style</span> <span class="attribute">type</span>=<span class="value">"text/chartcss"</span>></span>
-                graph.a{fill:#c4df9b}
-                graph.b{fill:#acd373}
-                graph.c{fill:#8dc63f}
-                graph.d{fill:#598527}
-                graph{
-                    fill      : #fff200;
-                    notransit : 0.5;
-                    stroke    : #406618;
-                }
-            <span class="tag">&lt;/<span class="title">a:style</span>></span>
-        <span class="tag">&lt;/<span class="title">a:graph</span>></span></code></pre>
-<div class="demo" id="originalcontent-6">new apf.frame({
+            </a:style>
+        </a:graph>
+        <!-- endcontent -->
+    </a:axis>
+</a:chart></textarea><textarea id=codecontent-"6" class=demo language-javascript">new apf.frame({
   htmlNode   : document.body,
-  caption    : &quot;Options&quot;,
+  caption    : "Options",
   width      : 250,
   childNodes : [
     new apf.radiobutton({
       value : 1,
-      data  : &quot;Option 1&quot;
+      data  : "Option 1"
     }),
     /* startcontent */
     new apf.radiobutton({
       value : 2,
-      data  : &quot;Option 2&quot;
+      data  : "Option 2"
     }),
     new apf.radiobutton({
       value : 3,
-      data  : &quot;Option 3&quot;
+      data  : "Option 3"
     }),
     /* endcontent */
     new apf.radiobutton({
       value : 4,
-      data  : &quot;Option 4&quot;
+      data  : "Option 4"
     })
   ]
-});</div><pre class="demo" id="snippetcontent-6"><code class="snippetcontent language-javascript">    <span class="keyword">new</span> apf.radiobutton({
-      value : <span class="number">2</span>,
-      data  : <span class="string">"Option 2"</span>
-    }),
-    <span class="keyword">new</span> apf.radiobutton({
-      value : <span class="number">3</span>,
-      data  : <span class="string">"Option 3"</span>
-    }),</code></pre>
-<p>(Highlighting is enabled by default; you&#39;ll have to define your own CSS that matches the highlight-js notation, though, which this document does not do!)</p>
+});</textarea><p>(Highlighting is enabled by default; you&#39;ll have to define your own CSS that matches the highlight-js notation, though, which this document does not do!)</p>
 <h2>STRIKETHROUGH</h2>
 <p>Hey, this is <del>terrible</del> great!</p>
 <h2>HORIZONTAL RULES</h2>
@@ -241,8 +216,8 @@ code <span class="keyword">block</span>.</code></pre>
 </ul>
 <p>Orange
 :   The fruit of an evergreen tree of the genus Citrus.</p>
-<pre id="snippetcontent-7"><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
-<pre id="snippetcontent-8"><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
+<pre id="codecontent-7"><code class="language-python"><span class="keyword">print</span> <span class="string">"Testing yet again"</span></code></pre>
+<pre id="codecontent-8"><code>It<span class="attribute">'s</span> extremly hard <span class="keyword">to</span> come up <span class="keyword">with</span> make believe text.</code></pre>
 <p>Pomegranate
 :   A deciduous shrub or small tree (Punica granatum), native to Asia and <em>widely cultivated</em> for its edible fruit. 
 Anyway, Blah blah blah.adsadsasd.</p>
@@ -251,7 +226,7 @@ Anyway, Blah blah blah.adsadsasd.</p>
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
   Aliquam hendrerit mi posuere lectus.
 :   Second definition for term 1, also wrapped in a paragraph</p>
-<pre id="snippetcontent-9"><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
+<pre id="codecontent-9"><code><span class="title">because</span> <span class="keyword">of</span> the blank line preceding it. {: .test}   </code></pre>
 <p>{: #TestingIDHere}</p>
 <h2>ATTRIBUTES (Maruku)</h2>
 <p>{: #myid .myclass}</p>
@@ -264,7 +239,7 @@ attributes!
 <h2>AUTO-LINK</h2>
 <hr>
 <p><a href="http://foo.com/">http://foo.com/</a>  </p>
-<a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#102;&#111;&#x6f;&#64;&#98;&#97;&#114;&#46;&#x63;&#111;&#109;">&#102;&#111;&#x6f;&#64;&#98;&#97;&#114;&#46;&#x63;&#111;&#109;</a>
+<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x66;&#x6f;&#x6f;&#64;&#x62;&#97;&#114;&#x2e;&#99;&#x6f;&#x6d;">&#x66;&#x6f;&#x6f;&#64;&#x62;&#97;&#114;&#x2e;&#99;&#x6f;&#x6d;</a>
 
 <h2>ENCODING</h2>
 <hr>
