@@ -1,15 +1,11 @@
 # Introduction
 
-** IN THE MIDDLE OF A TRANSITION, NOT ALL FEATURES ARE FUNCITONAL YET **
-
 This is **no**t **a**nother **m**arkdown **p**arser.
 
 Well, okay, yes it is. But it handles a lot more than you're probably used to finding in just a single package. This generator can process Markdown files written in:
 
 * [The standard Gruber syntax](http://daringfireball.net/projects/markdown/)
 * [The GitHub Flavored Markdown syntax](http://github.github.com/github-flavored-markdown/) (including language-specific codeblock fences)
-* [The PHP Markdown Extra syntax](http://michelf.com/projects/php-markdown/extra/) (**NOT YET SUPPORTED**)
-* Supports [Maruku metadata](http://maruku.rubyforge.org/maruku.html#meta) (**NOT YET SUPPORTED**)
 
 It also does some "non-traditional" work, too, that I find pretty damn useful:
 
@@ -26,6 +22,7 @@ Maruku only allowed you to do inline IDs for stylized text, like `code`, **stron
 * `[[keys: ]]` converts keyboard characters into a pretty-printed format
 * `[[menu: ]]` converts a comma-seprated list into a pretty-printed menu
 * Markdown wrapped in `<div marked="1">` is processed.
+* Width and height attributes can be added to images with `<x, y>`
 
 namp was forked from [marked](https://github.com/chjj/marked), which is a super-fast Markdown parser that handles all the standard GFM syntax.
 
