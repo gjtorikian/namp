@@ -34,6 +34,8 @@ Reference-style:
 
   [id2]: http://upload.wikimedia.org/wikipedia/en/math/b/8/b/b8b4326ebb88870f8cc97ab3f59a0867.png "Still, a random image"
 
+Add `<x, y>` at the end to provide width and height attributes! 
+
 ## HEADERS
 ---------------
 
